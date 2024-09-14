@@ -18,7 +18,7 @@ const Home = () => {
     <div>
       <Bannar />
 
-      <div className=" grid pt-28 grid-cols- md:grid-cols-3 gap-5 ">
+      <div className=" grid pt-10 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 p-8">
         {allData?.map((data) => (
           <Card key={data.id} data={data}></Card>
         ))}

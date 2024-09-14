@@ -1,12 +1,15 @@
 import { useState } from "react";
 import logo from "../src/assets/img/Logo.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="fixed w-full">
-      <header className="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
-        <div className="flex-1 flex justify-between items-center">
-          <img src={logo} alt="" />
+    <div className="fixed w-full z-50">
+      <header className="lg:px-16 px-4  flex flex-wrap items-center bg-white  shadow-md">
+        <div className="flex-1 flex w-[120px] justify-between items-center">
+          <Link to={"/"}>
+            <img className="w-[120px]" src={logo} alt="" />
+          </Link>
         </div>
 
         {/* Toggle button for small screens */}
@@ -35,18 +38,21 @@ const Navbar = () => {
         >
           <nav>
             <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-              <li>
-                <a className="md:p-4 py-3 px-0 block" href="#">
+              <Link to={"/"}>
+                <li className="md:p-4 py-3 px-0 block font-bold" href="#">
                   Home
-                </a>
-              </li>
+                </li>
+              </Link>
+
+              <Link to={"/Donaion"}>
+                <li>
+                  <a className="md:p-4 py-3 px-0 block font-bold" href="#">
+                    Donation
+                  </a>
+                </li>
+              </Link>
               <li>
-                <a className="md:p-4 py-3 px-0 block" href="#">
-                  Donation
-                </a>
-              </li>
-              <li>
-                <a className="md:p-4 py-3 px-0 block" href="#">
+                <a className="md:p-4 py-3 px-0 block font-bold" href="#">
                   Statistics
                 </a>
               </li>
