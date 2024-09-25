@@ -51,11 +51,13 @@ const Navbar = () => {
                   </a>
                 </li>
               </Link>
-              <li>
-                <a className="md:p-4 py-3 px-0 block font-bold" href="#">
-                  Statistics
-                </a>
-              </li>
+              <Link to={"/Static"}>
+                <li>
+                  <a className="md:p-4 py-3 px-0 block font-bold" href="#">
+                    Statistics
+                  </a>
+                </li>
+              </Link>
             </ul>
           </nav>
         </div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 const Card = ({ data }) => {
   const {
@@ -5,8 +6,7 @@ const Card = ({ data }) => {
     title,
     image,
     category,
-    description,
-    price,
+
     card_color,
     category_background_color,
     text_color,

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { ToastContainer, toast } from "react-toastify";
@@ -6,7 +7,7 @@ import { saveDonateMoney } from "../LocalStorage/LocalStroage";
 
 const DonationDetails = () => {
   const { id } = useParams();
-  const idInt = parseInt(id);
+
   const [allData, setAllData] = useState([]);
   const [detailsData, setDetailsData] = useState(null); // Initialize as null
   const notify = (data) => {

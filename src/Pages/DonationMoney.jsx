@@ -4,8 +4,6 @@ import { toast } from "react-toastify";
 
 const DonationMoney = () => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     // Function to fetch data
