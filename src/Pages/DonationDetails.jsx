@@ -37,7 +37,7 @@ const DonationDetails = () => {
             src={detailsData?.image}
             alt=""
           />
-          <div className="absolute left-0 bottom-0  h-20 p-2 bg-gradient-to-r from-[#0B0B0B]    w-[850px]">
+          <div className="absolute justify-center items-centers    left-0 bottom-0  h-20 p-2 bg-gradient-to-r from-[#0B0B0B]    w-[850px]">
             <button
               onClick={() => notify(detailsData)}
               style={{ backgroundColor: detailsData?.text_color }}

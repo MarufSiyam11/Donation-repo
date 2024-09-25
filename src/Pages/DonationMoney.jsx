@@ -30,7 +30,7 @@ const DonationMoney = () => {
         >
           <div>
             <img
-              className="w-full h-full object-cover"
+              className="w-[300px] h-full object-cover"
               src={item?.image}
               alt={item.title}
             />

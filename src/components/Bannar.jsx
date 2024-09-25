@@ -19,10 +19,10 @@ const Bannar = () => {
           <label htmlFor=""></label>
           <input
             className="p-2 rounded w-96 border-2  dark:bg-gray-900  text-purple-900 "
-            type="search"
             placeholder="search here ...."
             name=""
             id=""
+            type="text"
           />
           <button
             className="bg-red-500 rounded w-32 font-bold text-white hover:bg-orange-900"
